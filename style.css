@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#2f3144;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    background-color:#2c3055;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+ h1{
+    color: white;
+ }
+ #cityInput{
+    width: 300px;
+    height: 30px;
+    background-color: transparent;
+    color: #757791;
+
+ }
+ #addCityBtn{
+    width: 80px;
+    height: 35px;
+    background-color: #403570;
+    color: white;
+ }
+  .input-section {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  #weatherCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+  
+  .weather-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    background-color:transparent;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .weather-card:hover {
+    transform: translateY(-5px);
+  }
+
+  @media screen and (max-width: 768px) {
+   
+    .container {
+      padding: 10px;
+    }
+  
+    .weather-card {
+      width: calc(50% - 20px); 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+   
+    .weather-card {
+      width: 100%; 
+    }
+  }
